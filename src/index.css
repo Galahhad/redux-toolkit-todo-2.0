@@ -103,7 +103,7 @@ code {
   border-radius: 5px;
   transition: 0.4s;
 }
-.todo:hover {
+.shadow {
   box-shadow: 0 0 20px 3px black;
 }
 .todo p {
