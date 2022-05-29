@@ -21,7 +21,7 @@ const Favorites = () => {
     <div className="todos">
       {filtered.map((item, index) => {
         return (
-          <div key={index} className="todo">
+          <div key={index} className={`todo ${item.favorite ? 'shadow' : ''}`}>
             <p>{item.text}</p>
             <button onClick={() => handleFavorite(item.id)}>
               {item.favorite ? (
