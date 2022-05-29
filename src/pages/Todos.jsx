@@ -20,7 +20,7 @@ const Todos = () => {
     <div className="todos">
       {todos.map((item, index) => {
         return (
-          <div key={index} className="todo">
+          <div key={index} className={`todo ${item.favorite ? 'shadow' : ''}`}>
             <p>{item.text}</p>
             <button onClick={() => handleFavorite(item.id)}>
               {item.favorite ? (
